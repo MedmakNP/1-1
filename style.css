@@ -248,18 +248,15 @@ color: #FFFFFF;
 .services
 {
     width: 100%;
-    height: 546px;
+    height: 506px;
     background-color: #FFFFFF;
 
 }
-.flex_services
-{
-display:flex;
 
-}
 .text_services
 {
     padding-left:62px;
+    padding-top: 50px;
 }
 .h_services
 {
@@ -296,81 +293,235 @@ font-size: 18px;
 line-height: 24px;
 color: #797979;
 }
-.images_services
-{
-display:flex;
-flex-wrap: wrap;
-}
-.text_images_services
+
+.text_box
 {
 font-family: 'Roboto Condensed';
 font-style: normal;
 font-weight: bold;
+text-align: center;
 font-size: 16px;
 line-height: 19px;
-letter-spacing: 2px;
+
 }
-.image_color
+.wrapper_box
 {
-    filter: #2B4074;
-    padding-left:5px;
+    padding-top: 5px;
 }
-.service1
+.service-wrap2, .service-wrap1
 {
-width: 225px;
-height: 255px;
-border: 1.5px solid #F9F6E5 
+ display: flex;
+  
 }
-.service2
+.flex_services
 {
-width: 225px;
-height: 255px;
-border: 1.5px solid #F9F6E5 
+display:flex;
+justify-content: space-between;
+
 }
-.service3
-{
-width: 225px;
-height: 255px;
-border: 1.5px solid #F9F6E5 
-}
-.service4
-{
-width: 225px;
-height: 255px;
-border: 1.5px solid #F9F6E5 
-}
-.service5
-{
-width: 225px;
-height: 255px;
-border: 1.5px solid #F9F6E5 
-}
-.service6
+
+.box
 { 
-display: flex;
-align-items: center;
-justify-content: center; 
 width: 225px;
 height: 255px;
 border: 1.5px solid #F9F6E5 ;
-transition:0.2s linear;
+transition: 0.2s;
 
 }
-.service6:hover
+.image
+{
+ padding-top: 70px;
+ display: block;
+ margin: 0 auto; 
+ width: 60px;
+}
+.block2
+{
+    margin-top: 70px;
+    visibility: hidden;
+}
+.box:hover
+{
+border: 1.5px solid #2B4074;
+}
+.box:hover .block2
+{
+    margin-top: 25px;
+    visibility:visible;
+    transition: 0.3s;
+}
+.box:hover .image
+{
+   padding-top: 25px;
+   transition: 0.3s;
+}
+
+.Turnip_greens_yarrow
 {  
-border:1.5px solid #2B4074;
-
+font-family: "Roboto";
+font-style: normal;
+text-align: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+color: #9B9B9B;
+}
+.Full_view
+{
+font-family: "Roboto Condensed";
+font-style: normal;
+font-weight: bold;
+text-align: center;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 2px;
+color: #2B4074;
 }
 
-.service7
+
+
+
+/* Work */
+.Work
 {
-width: 225px;
-height: 255px;
-border: 1.5px solid #F9F6E5 
+    width: 100%;
+    height: 668px;
+    background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
 }
-.service8
+.title_text
+{   
+    padding-top: 80px;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.title_line
 {
-width: 225px;
-height: 255px;
-border: 1.5px solid #F9F6E5 
+    margin:0 auto;
+    height: 8px;
+    width: 100px;
+    background: #FFFFFF;
+}
+.content
+{ 
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.portfolio
+{   position: relative;
+    width: 268px;
+    height: 239px;
+    margin: 10px;
+
+}
+.img_radius
+{
+    border-radius: 4px;
+}
+.overlay
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 12px;
+    top: 11px;
+    height: 217px;
+    width: 244px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: 0.4s;
+    background-color: #F9F6E5;
+}
+.info_but
+{
+    margin: 10px;
+}
+.portfolio:hover .overlay
+{
+    opacity: 0.83;
+}
+.content_titles
+{
+    display: flex;
+    justify-content: center;
+}
+.content_text
+{
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    width: 268px;
+    margin: 10px;
+    color: #2B4074;  
+}
+
+/* Video */
+
+.team
+{
+    width: 100%;
+    height: 580px;
+    background: #FFFFFF;
+}
+.team_inner
+{
+    display:flex;
+    justify-content: space-evenly;
+}
+.teamh2
+{
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    color: #4A4A4A;
+}
+.team_line
+{
+    width: 114px;
+    height: 8px;
+    background: #2B4074;
+}
+.teamP
+{   padding-top: 10px;
+    padding-bottom: 10px;
+    width: 584px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #9B9B9B;
+}
+.watch_button
+{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #F9F6E5;
+    width: 230px;
+    height: 60px;
+    background: #2B4074;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+.watch_button:hover
+{
+    background: #142550;
+    
 }
